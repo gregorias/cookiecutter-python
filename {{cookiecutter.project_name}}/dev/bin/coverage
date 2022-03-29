@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-pipenv run coverage run --source='{{cookiecutter.project_name}}/' --branch -m unittest discover -s test/ -t . && \
+pipenv run coverage run --source='{{cookiecutter.project_slug}}/' --branch -m unittest discover -s test/ -t . && \
 pipenv run coverage html

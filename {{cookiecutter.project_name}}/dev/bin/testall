@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 set -o verbose
-mypy {{cookiecutter.project_name}}/ test && \
+mypy {{cookiecutter.project_slug}}/ test && \
 python -m unittest discover -s test/ -t .
