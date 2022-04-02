@@ -1,3 +1,10 @@
+pre-commit:
+  scripts:
+    "format-files.bash":
+      runner: bash
+  commands:
+    unit-tests:
+      run: "./dev/bin/testall"
 commit-msg:
   commands:
     commitlint:
